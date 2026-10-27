@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="clear">
+ 
+  <main class="app">
+    <!-- SEARCH -->
+    <form id="searchForm" class="search glass">
+      <input type="text" id="city" placeholder="Search a city... e.g. Dubai" autocomplete="off">
+      <button type="submit" class="btn">Search</button>
+      <button type="button" id="locBtn" class="btn ghost" title="Use my location">📍</button>
+    </form>
+ 
+    <!-- RECENT SEARCHES -->
+    <div id="recent" class="recent"></div>
+ 
+    <!-- CURRENT WEATHER -->
+    <section id="current" class="current glass">
+      <div class="loader"></div>
+    </section>
+ 
+    <!-- 5-DAY FORECAST -->
+    <h3 class="label">5-day forecast</h3>
+    <section id="forecast" class="forecast"></section>
+  </main>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
